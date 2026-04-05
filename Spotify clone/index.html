@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moodify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="nav flex">
+
+            <div class="home flex">
+                <button class="logo bg-black"><img class="invert" height="33px" src="img/logo.svg" alt=""></button>
+                <button class="hicon bg-grey"><img class="invert" height="25px" src="img/home.svg" alt=""></button>
+                <ul class="search bg-grey flex">
+                    <li><button class="bg-grey"><img class="invert" height="25px" src="img/search.svg" alt=""></button></li>
+                    <li><input class="bg-grey input" type="text" placeholder="What do you want to play?"></li>
+                </ul>
+            </div>
+
+            <div class="side flex">
+                <button class="btn">Premium</button>
+                <button class="btn">Support</button>
+                <button class="btn">Download</button>
+                <button class="btn"><a href="/download">
+                        <span aria-hidden="true">
+                            <img height="15px" class="invert" src="img/install.svg" alt="">
+                            Install App</span>
+                    </a>
+                </button>
+                <button class="signup">Sign up</button>
+                <button class="login">Log in</button>
+            </div>
+
+        </div>
+
+        <div class="content flex">
+
+            <div class="left bg-grey">
+                <div class="head flex">
+                    <div>Your Library</div>
+                    <button class="bg-grey" aria-label="Create playlist or folder">
+                        <span aria-hidden="true">
+                            <img class="close invert" height="16px" src="img/cross.svg" alt="">
+                        </span>
+                    </button>
+                </div>
+
+                <div class="box1">
+                    <ul class="songlist">
+                    </ul>
+                </div>
+
+                <div class="box2">
+                    <div class="allref">
+                        <div class="ref flex">
+                            <div>
+                                <a href="https://www.spotify.com/in-en/legal/">
+                                    <span>Legal</span>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="https://www.spotify.com/in-en/safetyandprivacy/">
+                                    <span>Safety &amp; Privacy Center</span>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="https://www.spotify.com/in-en/legal/privacy-policy/">
+                                    <span>Privacy Policy</span>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="https://www.spotify.com/in-en/legal/cookies-policy/">
+                                    <span>Cookies</span>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3">
+                                    <span>About Ads</span>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="https://www.spotify.com/in-en/accessibility/">
+                                    <span>Accessibility</span>
+                                </a>
+                            </div>
+                        </div>
+                        <a class="ref2" href="https://www.spotify.com/legal/cookies-policy/" target="_blank"
+                            rel="noopener">
+                            <span>Cookies</span>
+                        </a>
+                    </div>
+                    <div>
+                        <button class="bg-grey english">
+                            <span aria-hidden="true">
+                                <img height="15px" class="invert" src="img/english.svg" alt="">
+                            </span>
+                            English
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="right bg-grey">
+                <img class="hamburger invert" src="img/menu.svg" alt="">
+                <div class="rhead">Spotify Playlists</div>
+
+                <div class="cards flex"></div>
+
+                <div class="playbar">
+
+                    <div class="abovebar">
+                        <div class="songinfo"></div>
+
+                        <div class="songbtn flex">
+                            <img id="previous" src="img/play-prev.svg" alt="">
+                            <img id="play" src="img/play-circle.svg" alt="">
+                            <img id="next" src="img/play-next.svg" alt="">
+                        </div>
+
+                        <div class="vs flex">
+                            <div class="songtime"></div>
+                            <div class="volume">
+                                <img id="vol" width="20px" src="img/volume.svg" alt="">
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="seekbar">
+                        <div class="circle"></div>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
